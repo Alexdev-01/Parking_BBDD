@@ -1,0 +1,322 @@
+2024-11-05 19:22:27 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.populateClientAppName(GenericDataSource.java:200)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.openConnection(GenericDataSource.java:163)
+	at org.jkiss.dbeaver.ext.h2.model.H2DataSource.openConnection(H2DataSource.java:74)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCExecutionContext.connect(JDBCExecutionContext.java:119)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.initializeMainContext(JDBCRemoteInstance.java:102)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCRemoteInstance.<init>(JDBCRemoteInstance.java:61)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSource.initializeRemoteInstance(JDBCDataSource.java:121)
+	at org.jkiss.dbeaver.ext.generic.model.GenericDataSource.<init>(GenericDataSource.java:125)
+	at org.jkiss.dbeaver.ext.h2.model.H2DataSource.<init>(H2DataSource.java:43)
+	at org.jkiss.dbeaver.ext.h2.model.H2MetaModel.createDataSourceImpl(H2MetaModel.java:56)
+	at org.jkiss.dbeaver.ext.generic.GenericDataSourceProvider.openDataSource(GenericDataSourceProvider.java:106)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.openDataSource(DataSourceDescriptor.java:1406)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect0(DataSourceDescriptor.java:1276)
+	at org.jkiss.dbeaver.registry.DataSourceDescriptor.connect(DataSourceDescriptor.java:1061)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectJob.run(ConnectJob.java:78)
+	at org.jkiss.dbeaver.runtime.jobs.ConnectionTestJob.run(ConnectionTestJob.java:103)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-11-05 19:25:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.getCoche(Parking.java:43)
+	at learning.tokioschool.parking.App.registrarEntradaCoche(App.java:93)
+	at learning.tokioschool.parking.App.main(App.java:30)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-05 19:25:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.getCoche(Parking.java:43)
+	at learning.tokioschool.parking.App.registrarEntradaCoche(App.java:93)
+	at learning.tokioschool.parking.App.main(App.java:30)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-05 19:27:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-05 19:27:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:28:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:28:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:28:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:28:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:28:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-05 19:28:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-05 19:30:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:30:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-05 19:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:36:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:81)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-05 19:37:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-05 19:38:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-06 15:31:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-06 15:31:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-06 15:31:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-06 15:33:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-06 17:44:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-06 17:44:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:81)
+	at learning.tokioschool.parking.Parking.getCoche(Parking.java:43)
+	at learning.tokioschool.parking.App.registrarEntradaCoche(App.java:93)
+	at learning.tokioschool.parking.App.main(App.java:30)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-06 17:45:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:81)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-06 17:46:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-06 17:46:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:80)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-06 17:48:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-06 17:48:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "HolraSalida" no encontrada
+Column "HolraSalida" not found [42122-210]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getTimestamp(JdbcResultSet.java:524)
+	at learning.tokioschool.parking.db.ManagerDbH2.search(ManagerDbH2.java:81)
+	at learning.tokioschool.parking.Parking.existeCoche(Parking.java:33)
+	at learning.tokioschool.parking.App.registrarSalidaCoche(App.java:112)
+	at learning.tokioschool.parking.App.main(App.java:33)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:385)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:374)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:296)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-11-06 17:49:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-06 17:55:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-08 18:31:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-08 18:31:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2024-11-08 18:31:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
+2025-03-18 23:54:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHES" ya existe
+Table "COCHES" already exists; SQL statement:
+CREATE TABLE Coches (Matricula VARCHAR (10) NOT NULL PRIMARY KEY, Marca VARCHAR (10) NOT NULL, Modelo VARCHAR(20) NOT NULL, HoraEntrada DATETIME NOT NULL, HoraSalida DATETIME) [42101-210]
